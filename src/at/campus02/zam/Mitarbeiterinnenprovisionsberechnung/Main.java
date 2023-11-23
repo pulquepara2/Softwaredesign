@@ -10,5 +10,8 @@ public class Main {
         MaM.add(a2);
         MaM.add(a3);
         MaM.berechneProvision();
+        MaM.changeCommissionTo(new Umsatzprovisionsstrategie());
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::");
+        MaM.berechneProvision();
     }
 }
