@@ -11,5 +11,6 @@ public class Artikel {
     public Artikel(String title, String content) {
         this.title = title;
         this.content = content;
+        LogSingleton.getInstance().log("Neuer Artikel erstellt: " + title);
     }
 }
