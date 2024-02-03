@@ -2,7 +2,7 @@ package at.campus02.zam.Kaffeehaus.Decorator;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Zum Kaffehaus startet.....");
+        System.out.println("Zam Kaffehaus startet.....");
         Getraenk g = new CafeLatte();
         g = new Milch(g);
         g = new Sirup(g);
@@ -14,6 +14,6 @@ public class Main {
         System.out.println("Der "+ g.getBeschreibung()+ " kostet: " + g.kostet() + "€");
 
 
-        System.out.println("Zum Kaffehaus schließt.....");
+        System.out.println("Zam Kaffehaus schließt.....");
     }
 }

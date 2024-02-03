@@ -4,11 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PodcastServer {
-    private List <Podcast> podcasts = new ArrayList<>();
 
-    public void add (Podcast podcast){
-        for(Podcast p : podcasts){
-            podcasts.add(podcast);
+
+    private List <Podcast> podcasts = new ArrayList<>();
+    private List<PodcastAbonnent>podcastAbonnenten = new ArrayList<>();
+
+    public void addNewPodcastAndNotifySubscribers (Podcast podcast) {
+        podcasts.add(podcast);
+        for (PodcastAbonnent p : podcastAbonnenten) {
+            p.erhalte(podcast);
         }
     }
+
+    public void addSubscriber (PodcastAbonnent podcastAbonnent){
+        podcastAbonnenten.add(podcastAbonnent);
+    }
+
+    public void removeSubsciber(PodcastAbonnent podcastAbonnent){
+        podcastAbonnenten.remove(podcastAbonnent);
+    }
+
 }
