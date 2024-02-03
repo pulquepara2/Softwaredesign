@@ -1,4 +1,4 @@
-package at.campus02.zam.Podcast;
+package at.campus02.zam.Observer.Medienverlag.Podcast;
 
 public class Main {
     public static void main(String[] args) {

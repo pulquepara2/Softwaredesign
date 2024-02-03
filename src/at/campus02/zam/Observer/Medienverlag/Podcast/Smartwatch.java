@@ -1,10 +1,10 @@
-package at.campus02.zam.Podcast;
+package at.campus02.zam.Observer.Medienverlag.Podcast;
 
-public class Notebook implements PodcastAbonnent{
+public class Smartwatch implements PodcastAbonnent{
     private String name;
     private PodcastServer podcastServer;
 
-    public Notebook(String name, PodcastServer podcastServer) {
+    public Smartwatch(String name, PodcastServer podcastServer) {
         this.name = name;
         this.podcastServer = podcastServer;
         System.out.println("Podcastabonnent "+ name + " wurde erstellt.");
@@ -13,7 +13,7 @@ public class Notebook implements PodcastAbonnent{
 
     @Override
     public void erhalte(Podcast podcast) {
-        System.out.println("Notebook "+ getName() + " hat den Podcast mit dem Titel '"+ podcast.getName()+ "' erhalten.");
+        System.out.println("Smartwatch "+ getName() + " hat den Podcast mit dem Titel '"+ podcast.getName()+ "' erhalten.");
     }
 
     @Override

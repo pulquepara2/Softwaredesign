@@ -1,4 +1,4 @@
-package at.campus02.zam.Medienverlag.klatsch;
+package at.campus02.zam.Observer.Medienverlag;
 
 public class LogSingleton {
 

@@ -1,4 +1,4 @@
-package at.campus02.zam.Podcast;
+package at.campus02.zam.Observer.Medienverlag.Podcast;
 
 import java.util.ArrayList;
 import java.util.List;
