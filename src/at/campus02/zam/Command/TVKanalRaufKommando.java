@@ -1,13 +1,15 @@
-package at.campus02.zam.Commander;
+package at.campus02.zam.Command;
+
 import java.util.Stack;
 
-public class TVKanalRunterKommando implements Kommando {
+
+public class TVKanalRaufKommando implements Kommando {
 
     private TV tv;
     private Stack<Boolean> history = new Stack<>();
 
-
-    public TVKanalRunterKommando(TV tv) {
+    public TVKanalRaufKommando(TV tv) {
+        super();
         this.tv = tv;
     }
 
@@ -17,23 +19,23 @@ public class TVKanalRunterKommando implements Kommando {
         if (!tv.istEin()) {
             tv.ein();
         } else {
-            tv.runter();
+            tv.rauf();
         }
     }
 
     @Override
     public void undo() {
         Boolean istEin = history.pop();
-        if(!istEin){
+        if (!istEin) {
             tv.aus();
-        }else{
-            if (tv.getKanal() == 40) {
-                tv.setKanal(1);
+        } else {
+            if (tv.getKanal() == 1) {
+                tv.setKanal(40);
             } else {
-                tv.rauf();
+                tv.runter();
             }
         }
-    }
 
+    }
 
 }

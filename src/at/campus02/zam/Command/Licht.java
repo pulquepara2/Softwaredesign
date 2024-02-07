@@ -1,4 +1,4 @@
-package at.campus02.zam.Commander;
+package at.campus02.zam.Command;
 
 public class Licht {
     public void an(){

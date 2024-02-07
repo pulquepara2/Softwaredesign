@@ -1,4 +1,4 @@
-package at.campus02.zam.Commander;
+package at.campus02.zam.Command;
 
 // Kommando Licht an muss Interface implementiere
 public class LichtAnKommando implements Kommando {
